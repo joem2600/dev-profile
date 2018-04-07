@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var devslopesBGImg: UIImageView!
+    @IBOutlet weak var devslopesLogoImg: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        devslopesBGImg.clipsToBounds = true
+//        devslopesLogoImg.layer.cornerRadius = 50
+        
     }
 
     override func didReceiveMemoryWarning() {
